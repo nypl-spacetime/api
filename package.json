@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/nypl-spacetime/api",
   "dependencies": {
-    "io": "nypl-spacetime/histograph-io",
+    "histograph-io": "nypl-spacetime/histograph-io",
     "express": "^4.13.3",
     "histograph-db-elasticsearch": "nypl-spacetime/histograph-db-elasticsearch",
     "pits-to-geojson": "histograph/pits-to-geojson"
