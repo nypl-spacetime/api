@@ -1,0 +1,29 @@
+
+{
+  "name": "spacetime-api",
+  "version": "0.0.1",
+  "description": "Space/Time Directory API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nypl-spacetime/api.git"
+  },
+  "author": "Bert Spaan <bertspaan@nypl.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nypl-spacetime/api/issues"
+  },
+  "homepage": "https://github.com/nypl-spacetime/api",
+  "dependencies": {
+    "express": "^4.13.3",
+    "histograph-db-elasticsearch": "nypl-spacetime/histograph-db-elasticsearch",
+    "pits-to-geojson": "histograph/pits-to-geojson"
+  },
+  "devDependencies": {
+    "standard": "^6.0.7"
+  }
+}
