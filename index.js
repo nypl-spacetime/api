@@ -1,9 +1,13 @@
 var express = require('express')
 // var pitsToGeoJSON = require('pits-to-geojson')
+var io = require('histograph-io')
 var elasticsearch = require('histograph-db-elasticsearch')
 var app = express()
 
-var port = 3002
+// Mount Histograph IO
+app.use('/', io)
+
+var port = 3001
 
 app.use(function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*')
