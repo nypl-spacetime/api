@@ -20,6 +20,7 @@
   "dependencies": {
     "express": "^4.13.3",
     "histograph-db-elasticsearch": "nypl-spacetime/histograph-db-elasticsearch",
+    "histograph-db-neo4j": "nypl-spacetime/histograph-db-neo4j",
     "histograph-io": "nypl-spacetime/histograph-io",
     "histograph-uri-normalizer": "histograph/uri-normalizer",
     "pits-to-geojson": "histograph/pits-to-geojson",
