@@ -2,15 +2,18 @@ var express = require('express')
 var request = require('request')
 // var pitsToGeoJSON = require('pits-to-geojson')
 var normalizer = require('histograph-uri-normalizer')
-var io = require('histograph-io')
-var elasticsearch = require('histograph-db-elasticsearch')
-var neo4j = require('histograph-db-neo4j')
+var io = require('spacetime-io')
+var elasticsearch = require('spacetime-db-elasticsearch')
+var neo4j = require('spacetime-db-neo4j')
+var cors = require('cors')
 var app = express()
 
-// Mount Histograph IO
+// Mount Space/Time IO
 app.use('/', io)
 
-var port = 3001
+app.use(cors())
+
+var port = process.env.PORT || 3001
 
 app.use(function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*')

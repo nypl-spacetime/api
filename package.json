@@ -19,9 +19,9 @@
   "homepage": "https://github.com/nypl-spacetime/api",
   "dependencies": {
     "express": "^4.13.3",
-    "histograph-db-elasticsearch": "nypl-spacetime/histograph-db-elasticsearch",
-    "histograph-db-neo4j": "nypl-spacetime/histograph-db-neo4j",
-    "histograph-io": "nypl-spacetime/histograph-io",
+    "spacetime-db-elasticsearch": "nypl-spacetime/spacetime-db-elasticsearch",
+    "spacetime-db-neo4j": "nypl-spacetime/spacetime-db-neo4j",
+    "spacetime-io": "nypl-spacetime/spacetime-io",
     "histograph-uri-normalizer": "histograph/uri-normalizer",
     "pits-to-geojson": "histograph/pits-to-geojson",
     "request": "^2.69.0"
