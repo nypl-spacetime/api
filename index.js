@@ -3,13 +3,15 @@ var request = require('request')
 // var pitsToGeoJSON = require('pits-to-geojson')
 var normalizer = require('histograph-uri-normalizer')
 var io = require('spacetime-io')
+var logs = require('spacetime-logs-api')
 var elasticsearch = require('spacetime-db-elasticsearch')
 var neo4j = require('spacetime-db-neo4j')
 var cors = require('cors')
 var app = express()
 
-// Mount Space/Time IO
+// Mount Space/Time IO and Logs API
 app.use('/', io)
+app.use('/logs', logs)
 
 app.use(cors())
 
