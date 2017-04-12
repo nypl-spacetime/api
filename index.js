@@ -1,6 +1,5 @@
 var express = require('express')
 var request = require('request')
-// var pitsToGeoJSON = require('pits-to-geojson')
 var normalizer = require('histograph-uri-normalizer')
 var io = require('spacetime-io')
 var logs = require('spacetime-logs-api')
@@ -179,5 +178,5 @@ app.get('/search', function (req, res) {
 })
 
 app.listen(port, function () {
-  console.log('PITs API listening on port ' + port)
+  console.log('Space/Time API listening on port ' + port)
 })
