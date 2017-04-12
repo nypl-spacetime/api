@@ -1,7 +1,7 @@
 {
   "name": "spacetime-api",
   "version": "0.1.0",
-  "description": "Space/Time Directory API",
+  "description": "NYC Space/Time Directory API",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
@@ -19,13 +19,7 @@
   "homepage": "https://github.com/nypl-spacetime/spacetime-api",
   "dependencies": {
     "express": "^4.14.0",
-    "histograph-uri-normalizer": "github:histograph/uri-normalizer",
-    "pits-to-geojson": "github:histograph/pits-to-geojson",
-    "request": "^2.73.0",
     "spacetime-db-elasticsearch": "github:nypl-spacetime/spacetime-db-elasticsearch",
-    "spacetime-db-neo4j": "github:nypl-spacetime/spacetime-db-neo4j",
-    "spacetime-io": "github:nypl-spacetime/spacetime-io",
-    "spacetime-logs-api": "github:nypl-spacetime/spacetime-logs-api"
   },
   "devDependencies": {
     "standard": "^7.1.2"
