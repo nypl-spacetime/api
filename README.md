@@ -1,5 +1,18 @@
-# NYC Space/Time Directory Search API
+# NYC Space/Time Directory API
 
-API for searching [NYC Space/Time Directory](http://spacetime.nypl.org) data in Elasticsearch. Used by [Atlas](https://github.com/nypl-spacetime/atlas).
+NYC Space/Time Directory API
 
-__MORE SOON!__
+TODO:
+
+  - Convert to AWS Lambda!
+  - Two endpoints:
+    1. `/search`
+    2. `/datasets/:datasetId/objects/:objectId`
+
+Searching, e.g. `/search?name=name&type=type`:
+  - by bounding box, `northWest`, etc.
+  - years
+  - type
+  - names
+  - ID
+  
