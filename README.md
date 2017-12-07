@@ -15,5 +15,4 @@ Searching, e.g. `/search?name=name&type=type`:
   - type
   - names
   - ID
-
-
+  
