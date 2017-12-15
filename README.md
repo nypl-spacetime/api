@@ -30,8 +30,15 @@ Prior to deployment, you must ensure your `AWS_PROFILE` is set as an environment
 
 ### Install Dependencies
 
+First, install [Serverless framework](https://serverless.com/) globally:
+
 ```sh
-$ npm install -g serverless // Install serverless globally
+$ npm install -g serverless
+```
+
+Then, install dependencies:
+
+```
 $ npm install
 ```
 
