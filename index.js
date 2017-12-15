@@ -241,13 +241,13 @@ app.get('/search', (req, res) => {
     // TODO: check if coordinates is 4 numbers!
 
     const northWest = {
-      lat: coordinates[0],
-      lon: coordinates[1]
+      lat: coordinates[1],
+      lon: coordinates[0]
     }
 
     const southEast = {
-      lat: coordinates[2],
-      lon: coordinates[3]
+      lat: coordinates[3],
+      lon: coordinates[2]
     }
 
     if (geometryOperation === 'contains') {
