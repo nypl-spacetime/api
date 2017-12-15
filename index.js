@@ -276,7 +276,8 @@ app.get('/search', (req, res) => {
     } else {
       query.query.bool.must.push({
         bool: {
-          filter: [
+          minimum_should_match: 1,
+          should: [
             {
               geo_bounding_box: {
                 northWest: {
